@@ -1,0 +1,27 @@
+Background:
+
+Pada project ini menganalisis tentang dataset Air BnB listing Bangkok dimana hasil analisis memberikan saran kepada stakeholder. 
+Air BnB sendiri adalah perusahaan yang bergerak dibidang penyewaan penginapan yang memungkinkan user mendaftarkan dan menyewa properti dalam jangka waktu tertentu.
+Dalam data ini hanya memuat list properti yang telah didaftarkan ke Air BnB dan jumlah review nya, dan tidak ada list transaksi user yang menginap,
+sehingga analisis akan berfokus pada data yang ada, mengesampingkan pengaruh transaksi pada Air BnB.
+
+Selain itu menambahkan dataset jumlah wisatawan di Bangkok untuk memperkuat hipotesis.
+
+Stakeholder:
+CMO (Chief Marketing Officer) 
+Untuk meningkatkan rating aplikasi sehingga dapat mengungguli perusahaan kompetitor sekaligus ingin mengetahui strategi pemasaran apa yang dapat digunakan untuk meningkatkan daya tarik penyewa pada berbagai tipe properti.
+
+Hipotesis Masalah:
+1. Beberapa listing ada yang tidak memiliki nama penginapan, dan aplikasi memperbolehkan hal itu
+2. Terdapat beberapa penginapan yang availability 0, yang artinya tidak bisa di sewa
+3. Terdapat data duplikat yang menyebabkan user/pengguna akan mengalami miss data
+4. Terjadinya penurunan jumlah review pada tahun 2021 dengan sangat signifikan
+5. Terdapat properti yang memiliki jumlah ulasan yangs sedikit namun jumlah propertinya banyak
+
+Data Understanding & Cleaning:
+1. Menghapus data duplicate
+2. Mengisi nilai nan
+3. Menghapus kolom yang memiliki nilai 0 (bukan NaN)
+4. Melihat outlier, dan menentukan apakah perlu di drop atau tidak
+5. Membuat dataframe baru, berdasarkan room type.
+
